@@ -16,7 +16,7 @@ app.use(helmet())
 
 connectDB()
 
-app.use('/products', productRoute)
+app.use('/api/v1', productRoute)
 
 app.get("/",(req,res)=>{
     res.send("Hello")
