@@ -1,9 +1,10 @@
 import Product from "../models/product.js"
+import ErrorHandler from "../utils/errorHandler.js"
 
 
 // GET ALL PRODUCTS  --> api/v1/product/all
 
-export const getAllProducts = async(req,res)=>{
+export const getAllProducts = async(req,res,next)=>{
 
     const products = await Product.find()
 
@@ -16,9 +17,13 @@ export const getAllProducts = async(req,res)=>{
 
 // GET SINGLE PRODUCT  --> api/v1/product/:id
 
-export const getSingleProduct = async(req,res)=>{
+export const getSingleProduct = async(req,res,next)=>{
 
     const product = await Product.findById(req.params.id)
+
+    if(!product){
+        return next(new ErrorHandler("Product not found",404))
+    }
 
     res.status(200).json({
         success:true,
@@ -28,7 +33,7 @@ export const getSingleProduct = async(req,res)=>{
 
 // ADD NEW PRODUCTS --> api/v1/admin/product/new
 
-export const addProduct = async(req,res)=>{
+export const addProduct = async(req,res,next)=>{
 
     const newProduct = await Product.create(req.body)
 
@@ -40,7 +45,7 @@ export const addProduct = async(req,res)=>{
 
 
 // UPDATE A PRODUCT --> api/v1/admin/product/:id
-export const updateProduct = async(req,res)=>{
+export const updateProduct = async(req,res,next)=>{
 
     let product = await Product.findById(req.params.id)
 
@@ -66,7 +71,7 @@ export const updateProduct = async(req,res)=>{
 
 // DELETE A PRODUCT --> api/v1/admin/product/:id
 
-export const deleteProduct = async(req,res)=>{
+export const deleteProduct = async(req,res,next)=>{
 
     const product = await Product.findById(req.params.id)
 

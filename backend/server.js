@@ -6,9 +6,13 @@ import dotenv from "dotenv"
 dotenv.config({ path: 'backend/config/config.env' })
 import connectDB from "./config/database.js"
 import productRoute from "./routes/products.js"
+import errorMiddleware from "./middlwares/errors.js"
 
 
 const app = express()
+
+// Middlewares  
+
 app.use(express.json())
 app.use(cors())
 app.use(morgan("tiny"))
@@ -18,9 +22,8 @@ connectDB()
 
 app.use('/api/v1', productRoute)
 
-app.get("/",(req,res)=>{
-    res.send("Hello")
-})
+// Middleware to handle errors
+app.use(errorMiddleware)
 
 app.listen(process.env.PORT , ()=>{
     console.log(`Server runnning on PORT: ${process.env.PORT} in ${process.env.NODE_ENV} mode`);
