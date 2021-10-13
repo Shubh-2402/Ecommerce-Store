@@ -18,14 +18,28 @@ app.use(cors())
 app.use(morgan("tiny"))
 app.use(helmet())
 
+
+// DATABASE CONNECTION
 connectDB()
 
+
+// API ROUTES
 app.use('/api/v1', productRoute)
 
 // Middleware to handle errors
 app.use(errorMiddleware)
 
-app.listen(process.env.PORT , ()=>{
+const server = app.listen(process.env.PORT , ()=>{
     console.log(`Server runnning on PORT: ${process.env.PORT} in ${process.env.NODE_ENV} mode`);
+})
+
+// Handle Unhandled Promise rejection
+
+process.on('unhandledRejection', err =>{
+    console.log(`ERROR: ${err.message}`)
+    console.log("Shutting down the server due to Unhandled Promise Rejection");
+    server.close(()=>{
+        process.exit(1)
+    })
 })
 
