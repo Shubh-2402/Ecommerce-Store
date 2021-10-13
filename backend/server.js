@@ -9,6 +9,17 @@ import productRoute from "./routes/products.js"
 import errorMiddleware from "./middlwares/errors.js"
 
 
+// Handle Uncaught exceptions
+
+process.on('uncaughtException', err =>{
+    console.log(`ERROR: ${err.message}`)
+    console.log("Shutting down the server due to Uncaught exceptions");
+    server.close(()=>{
+        process.exit(1)
+    })
+})
+
+
 const app = express()
 
 // Middlewares  
@@ -32,6 +43,7 @@ app.use(errorMiddleware)
 const server = app.listen(process.env.PORT , ()=>{
     console.log(`Server runnning on PORT: ${process.env.PORT} in ${process.env.NODE_ENV} mode`);
 })
+
 
 // Handle Unhandled Promise rejection
 
