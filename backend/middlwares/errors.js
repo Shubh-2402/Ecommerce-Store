@@ -1,5 +1,3 @@
-import ErrorHandler from "../utils/errorHandler.js";
-
 const errorMiddleware = (err,req,res,next) => {
 
     err.statusCode = err.statusCode || 500
@@ -14,7 +12,7 @@ const errorMiddleware = (err,req,res,next) => {
         })
     }
 
-     if(process.env.NODE_ENV.trim() === 'PRODUCTION'){
+    if(process.env.NODE_ENV.trim() === 'PRODUCTION'){
 
         let error = {...err}
         error.message = err.message

@@ -16,7 +16,10 @@ export const getAllProducts = async(req,res,next)=>{
             products
         })
     }catch (error) {
-        res.status(500).json(error)
+        res.status(400).json({
+            success:false,
+            error
+        })
     }
     
 }
@@ -26,7 +29,7 @@ export const getAllProducts = async(req,res,next)=>{
 export const getSingleProduct = async(req,res,next)=>{
 
 
-    try {
+    try{
         const product = await Product.findById(req.params.id)
 
         if(!product){
@@ -37,8 +40,11 @@ export const getSingleProduct = async(req,res,next)=>{
             success:true,
             product
         })
-    } catch (error) {
-        res.status(500).json(error)
+    }catch (error){
+        res.status(400).json({
+            success:false,
+            error
+        })
     }
 
 }
@@ -54,8 +60,11 @@ export const addProduct = async(req,res,next)=>{
             success:true,
             newProduct
         })    
-    }catch (error) {
-        res.status(500).json(error)
+    }catch (error){
+        res.status(400).json({
+            success:false,
+            error
+        })
     }
 
     
@@ -83,7 +92,10 @@ export const updateProduct = async(req,res,next)=>{
             product
         })
     }catch(error){
-        res.status(500).json(error)
+        res.status(400).json({
+            success:false,
+            error
+        })
     }
 
 }
@@ -108,7 +120,10 @@ export const deleteProduct = async(req,res,next)=>{
             message:"Product Deleted"
         }) 
     }catch (error){
-        res.status(500).json(error)
+        res.status(400).json({
+            success:false,
+            error
+        })
     }
 
 }
