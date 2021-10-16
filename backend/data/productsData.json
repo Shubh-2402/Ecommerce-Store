@@ -16,7 +16,7 @@
     "reviews":[]
     },
     {
-        "name":"The Alchemist Pocket Edition",
+        "name":"Apple AirProds",
         "price":280.00,
         "description":"A global phenomenon, the alchemist has been read and loved by over 62 million readers,topping bestseller lists in 74 countries worldwide. Now this magical fable is beautifully repackaged in an edition that lovers of Paulo Coelho will want to treasure forever. Every few decades a book is published that changes the lives of its readers forever. This is such a book – a beautiful parable about learning to listen to your heart, read the omens strewn along life’s path and, above all, follow your dreams. Santiago, a young shepherd living in the hills of Andalucia, feels that there is more to life than his humble home and his flock. One day he finds the courage to follow his dreams into distant lands, each step galvanised by the knowledge that he is following the right path: His own. The people he meets along the way, the things he sees and the wisdom he learns are life-changing. With Paulo Coelho visionary blend of spirituality, magical realism and folklore, the alchemist is a story with the power to inspire nations and change people lives.",
         "ratings":4.5,
@@ -32,7 +32,7 @@
         "reviews":[]
     },
     {
-        "name":"The Alchemist Pocket Edition",
+        "name":"One Plus 7 pro",
         "price":280.00,
         "description":"A global phenomenon, the alchemist has been read and loved by over 62 million readers,topping bestseller lists in 74 countries worldwide. Now this magical fable is beautifully repackaged in an edition that lovers of Paulo Coelho will want to treasure forever. Every few decades a book is published that changes the lives of its readers forever. This is such a book – a beautiful parable about learning to listen to your heart, read the omens strewn along life’s path and, above all, follow your dreams. Santiago, a young shepherd living in the hills of Andalucia, feels that there is more to life than his humble home and his flock. One day he finds the courage to follow his dreams into distant lands, each step galvanised by the knowledge that he is following the right path: His own. The people he meets along the way, the things he sees and the wisdom he learns are life-changing. With Paulo Coelho visionary blend of spirituality, magical realism and folklore, the alchemist is a story with the power to inspire nations and change people lives.",
         "ratings":4.5,
@@ -53,7 +53,112 @@
         "reviews":[]
     },
     {
-        "name":"The Alchemist Pocket Edition",
+        "name":"Iphone 13",
+        "price":280.00,
+        "description":"A global phenomenon, the alchemist has been read and loved by over 62 million readers,topping bestseller lists in 74 countries worldwide. Now this magical fable is beautifully repackaged in an edition that lovers of Paulo Coelho will want to treasure forever. Every few decades a book is published that changes the lives of its readers forever. This is such a book – a beautiful parable about learning to listen to your heart, read the omens strewn along life’s path and, above all, follow your dreams. Santiago, a young shepherd living in the hills of Andalucia, feels that there is more to life than his humble home and his flock. One day he finds the courage to follow his dreams into distant lands, each step galvanised by the knowledge that he is following the right path: His own. The people he meets along the way, the things he sees and the wisdom he learns are life-changing. With Paulo Coelho visionary blend of spirituality, magical realism and folklore, the alchemist is a story with the power to inspire nations and change people lives.",
+        "ratings":4.5,
+        "images":[
+            {
+                "public_id":"boy-snow-hoodie",
+                "url":"https://res.cloudinary.com/dc5j574uj/image/upload/v1633580508/samples/people/bicycle.jpg"
+            },
+            {
+                "public_id":"boy-snow-hoodie",
+                "url":"https://res.cloudinary.com/dc5j574uj/image/upload/v1633580501/samples/people/kitchen-bar.jpg"
+            }
+        ],
+        "category":"Kitchen",
+        "seller":"amazon",
+        "stock":20,
+        "number_of_reviews":15,
+        "reviews":[]
+    },
+    {
+        "name":"Pedigree",
+        "price":280.00,
+        "description":"A global phenomenon, the alchemist has been read and loved by over 62 million readers,topping bestseller lists in 74 countries worldwide. Now this magical fable is beautifully repackaged in an edition that lovers of Paulo Coelho will want to treasure forever. Every few decades a book is published that changes the lives of its readers forever. This is such a book – a beautiful parable about learning to listen to your heart, read the omens strewn along life’s path and, above all, follow your dreams. Santiago, a young shepherd living in the hills of Andalucia, feels that there is more to life than his humble home and his flock. One day he finds the courage to follow his dreams into distant lands, each step galvanised by the knowledge that he is following the right path: His own. The people he meets along the way, the things he sees and the wisdom he learns are life-changing. With Paulo Coelho visionary blend of spirituality, magical realism and folklore, the alchemist is a story with the power to inspire nations and change people lives.",
+        "ratings":4.5,
+        "images":[
+            {
+                "public_id":"boy-snow-hoodie",
+                "url":"https://res.cloudinary.com/dc5j574uj/image/upload/v1633580508/samples/people/bicycle.jpg"
+            },
+            {
+                "public_id":"boy-snow-hoodie",
+                "url":"https://res.cloudinary.com/dc5j574uj/image/upload/v1633580501/samples/people/kitchen-bar.jpg"
+            }
+        ],
+        "category":"Kitchen",
+        "seller":"amazon",
+        "stock":20,
+        "number_of_reviews":15,
+        "reviews":[]
+    },
+    {
+        "name":"Redmi",
+        "price":280.00,
+        "description":"A global phenomenon, the alchemist has been read and loved by over 62 million readers,topping bestseller lists in 74 countries worldwide. Now this magical fable is beautifully repackaged in an edition that lovers of Paulo Coelho will want to treasure forever. Every few decades a book is published that changes the lives of its readers forever. This is such a book – a beautiful parable about learning to listen to your heart, read the omens strewn along life’s path and, above all, follow your dreams. Santiago, a young shepherd living in the hills of Andalucia, feels that there is more to life than his humble home and his flock. One day he finds the courage to follow his dreams into distant lands, each step galvanised by the knowledge that he is following the right path: His own. The people he meets along the way, the things he sees and the wisdom he learns are life-changing. With Paulo Coelho visionary blend of spirituality, magical realism and folklore, the alchemist is a story with the power to inspire nations and change people lives.",
+        "ratings":4.5,
+        "images":[
+            {
+                "public_id":"boy-snow-hoodie",
+                "url":"https://res.cloudinary.com/dc5j574uj/image/upload/v1633580508/samples/people/bicycle.jpg"
+            },
+            {
+                "public_id":"boy-snow-hoodie",
+                "url":"https://res.cloudinary.com/dc5j574uj/image/upload/v1633580501/samples/people/kitchen-bar.jpg"
+            }
+        ],
+        "category":"Kitchen",
+        "seller":"amazon",
+        "stock":20,
+        "number_of_reviews":15,
+        "reviews":[]
+    },
+    {
+        "name":"Ipad",
+        "price":280.00,
+        "description":"A global phenomenon, the alchemist has been read and loved by over 62 million readers,topping bestseller lists in 74 countries worldwide. Now this magical fable is beautifully repackaged in an edition that lovers of Paulo Coelho will want to treasure forever. Every few decades a book is published that changes the lives of its readers forever. This is such a book – a beautiful parable about learning to listen to your heart, read the omens strewn along life’s path and, above all, follow your dreams. Santiago, a young shepherd living in the hills of Andalucia, feels that there is more to life than his humble home and his flock. One day he finds the courage to follow his dreams into distant lands, each step galvanised by the knowledge that he is following the right path: His own. The people he meets along the way, the things he sees and the wisdom he learns are life-changing. With Paulo Coelho visionary blend of spirituality, magical realism and folklore, the alchemist is a story with the power to inspire nations and change people lives.",
+        "ratings":4.5,
+        "images":[
+            {
+                "public_id":"boy-snow-hoodie",
+                "url":"https://res.cloudinary.com/dc5j574uj/image/upload/v1633580508/samples/people/bicycle.jpg"
+            },
+            {
+                "public_id":"boy-snow-hoodie",
+                "url":"https://res.cloudinary.com/dc5j574uj/image/upload/v1633580501/samples/people/kitchen-bar.jpg"
+            }
+        ],
+        "category":"Kitchen",
+        "seller":"amazon",
+        "stock":20,
+        "number_of_reviews":15,
+        "reviews":[]
+    },
+    {
+        "name":"Samsung",
+        "price":280.00,
+        "description":"A global phenomenon, the alchemist has been read and loved by over 62 million readers,topping bestseller lists in 74 countries worldwide. Now this magical fable is beautifully repackaged in an edition that lovers of Paulo Coelho will want to treasure forever. Every few decades a book is published that changes the lives of its readers forever. This is such a book – a beautiful parable about learning to listen to your heart, read the omens strewn along life’s path and, above all, follow your dreams. Santiago, a young shepherd living in the hills of Andalucia, feels that there is more to life than his humble home and his flock. One day he finds the courage to follow his dreams into distant lands, each step galvanised by the knowledge that he is following the right path: His own. The people he meets along the way, the things he sees and the wisdom he learns are life-changing. With Paulo Coelho visionary blend of spirituality, magical realism and folklore, the alchemist is a story with the power to inspire nations and change people lives.",
+        "ratings":4.5,
+        "images":[
+            {
+                "public_id":"boy-snow-hoodie",
+                "url":"https://res.cloudinary.com/dc5j574uj/image/upload/v1633580508/samples/people/bicycle.jpg"
+            },
+            {
+                "public_id":"boy-snow-hoodie",
+                "url":"https://res.cloudinary.com/dc5j574uj/image/upload/v1633580501/samples/people/kitchen-bar.jpg"
+            }
+        ],
+        "category":"Kitchen",
+        "seller":"amazon",
+        "stock":20,
+        "number_of_reviews":15,
+        "reviews":[]
+    },
+    {
+        "name":"San Disk",
         "price":280.00,
         "description":"A global phenomenon, the alchemist has been read and loved by over 62 million readers,topping bestseller lists in 74 countries worldwide. Now this magical fable is beautifully repackaged in an edition that lovers of Paulo Coelho will want to treasure forever. Every few decades a book is published that changes the lives of its readers forever. This is such a book – a beautiful parable about learning to listen to your heart, read the omens strewn along life’s path and, above all, follow your dreams. Santiago, a young shepherd living in the hills of Andalucia, feels that there is more to life than his humble home and his flock. One day he finds the courage to follow his dreams into distant lands, each step galvanised by the knowledge that he is following the right path: His own. The people he meets along the way, the things he sees and the wisdom he learns are life-changing. With Paulo Coelho visionary blend of spirituality, magical realism and folklore, the alchemist is a story with the power to inspire nations and change people lives.",
         "ratings":4.5,
