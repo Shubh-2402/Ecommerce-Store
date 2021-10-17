@@ -4,8 +4,13 @@ import helmet from 'helmet'
 import morgan from 'morgan'
 import dotenv from "dotenv"
 dotenv.config({ path: 'backend/config/config.env' })
+
+
+// local imports 
+
 import connectDB from "./config/database.js"
 import productRoute from "./routes/products.js"
+import authRoute from "./routes/auth.js"
 import errorMiddleware from "./middlwares/errors.js"
 
 
@@ -36,6 +41,7 @@ connectDB()
 
 // API ROUTES
 app.use('/api/v1', productRoute)
+app.use('/api/v1',authRoute)
 
 // Middleware to handle errors
 app.use(errorMiddleware)
