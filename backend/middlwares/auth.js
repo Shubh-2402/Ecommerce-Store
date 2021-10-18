@@ -4,7 +4,7 @@ import User from "../models/user.js"
 
 // Check user authentication
 
-export const isAuthenticated = async(req,res,next)=>{
+export const AuthenticateUser = async(req,res,next)=>{
 
     const {token} = req.cookies
 

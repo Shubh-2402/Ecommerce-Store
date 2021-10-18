@@ -3,7 +3,7 @@ import ErrorHandler from "../utils/errorHandler.js"
 import sendToken from "../utils/jwtToken.js"
 
 
-// Register User /api/v1/register
+// Register User --> /api/v1/register
 export const registerUser = async(req,res,next)=>{
 
     const {name,email,password} = req.body
@@ -30,7 +30,7 @@ export const registerUser = async(req,res,next)=>{
     }
 }
 
-//Login User /api/v1/login
+//Login User --> /api/v1/login
 
 export const loginUser = async(req,res,next) =>{
 
@@ -64,4 +64,30 @@ export const loginUser = async(req,res,next) =>{
         })
     }
 
+}
+
+//Logout User --> /api/v1/logout
+
+export const logoutUser = async(req,res,next) =>{
+
+    try{
+
+        res.cookie("token",null,{
+            expires: new Date(Date.now()),
+            httpOnly:true
+        })
+
+        res.status(200).json({
+            success:true,
+            message:"Logged out successfully"
+        })
+        
+    } catch (error) {
+        res.status(400).json({
+            success:false,
+            error
+        })
+    }
+
+    
 }
