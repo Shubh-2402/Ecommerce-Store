@@ -65,6 +65,9 @@ export const getSingleProduct = async(req,res,next)=>{
 export const addProduct = async(req,res,next)=>{
 
     try {
+
+        req.body.user = req.user.id 
+        
         const newProduct = await Product.create(req.body)
 
         res.status(201).json({
