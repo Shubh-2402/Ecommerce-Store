@@ -4,6 +4,7 @@ import helmet from 'helmet'
 import morgan from 'morgan'
 import dotenv from "dotenv"
 dotenv.config({ path: 'backend/config/config.env' })
+import cookieParser from "cookie-parser"
 
 
 // local imports 
@@ -30,6 +31,7 @@ const app = express()
 // Middlewares  
 
 app.use(express.json())
+app.use(cookieParser())
 app.use(cors())
 app.use(morgan("tiny"))
 app.use(helmet())

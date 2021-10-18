@@ -49,14 +49,14 @@ export const loginUser = async(req,res,next) =>{
         }
 
         const isValidPassword = await user.comparePassword(password)
-        console.log(isValidPassword);
+        // console.log(isValidPassword);
 
         if(!isValidPassword){
             return next(new ErrorHandler("Invalid email or password",401))
         }
 
         sendToken(user,200,res)
-        
+
     }catch (error){
         res.status(400).json({
             success:false,
